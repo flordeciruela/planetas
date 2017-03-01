@@ -7,7 +7,11 @@ function resultado(datos){
            "Tu peso en Venus es: "+pesoVenus(datos)+"\n"+
            "Tu peso en Luna es: "+pesoLuna(datos)+"\n"+
            "Tu peso en Marte es: "+pesoMarte(datos)+"\n"+
-           "Tu peso en Jupiter es: "+pesoJupiter(datos)
+           "Tu peso en Jupiter es: "+pesoJupiter(datos)+"\n"+
+           "Tu peso en Saturno es: "+pesoSaturno(datos)+"\n"+
+           "Tu peso en Urano es : "+pesoUrano(datos)+"\n"+
+           "Tu peso en Neptuno es : "+pesoNeptuno(datos)+"\n"+
+           "Tu peso en Pluton es : "+pesoPluton(datos);
          );
   }
   else{
@@ -43,22 +47,19 @@ function pesoMarte(datos){
 function pesoJupiter(datos){
   return int_zero( 10 * datos * 2.533 ) / 10;  //Jupiter
 }
-/*
-function compute_datos(form)
-{
-    var datos = form.wt.value;
-    if (datos > 0.0) {
-        //Para Glisse
-        form.outputmrc.value = int_zero( 10 * datos * .378 ) / 10;  //Mercurio
-        form.outputvn.value = int_zero( 10 * datos * .906 ) / 10;  //Venus
-        form.outputmoon.value = int_zero( 10 * datos * .166 ) / 10; //Luna
-        form.outputmars.value = int_zero( 10 * datos * .379 ) / 10; //Marte
-        form.outputjp.value = int_zero( 10 * datos * 2.533 ) / 10;  //Jupiter
-        //Para Karin
-        form.outputsat.value = int_zero( 10 * datos * 1.066 ) / 10; //Saturno
-        form.outputur.value = int_zero( 10 * datos * .905 ) / 10;   //Urano
-        form.outputnpt.value = int_zero( 10 * datos * 1.133 ) / 10; //Neptuno
-        form.outputplt.value = int_zero( 10 * datos * .067 ) / 10; //Pluton
 
-    }
-*/
+function pesoSaturno(datos){
+  return int_zero( 10 * datos * 1.066 ) / 10;
+}
+
+function pesoUrano(datos){
+  return int_zero( 10 * datos * .905 ) / 10;
+}
+
+function pesoNeptuno(datos){
+  return int_zero( 10 * datos * 1.133 ) / 10;
+}
+
+function pesoPluton(datos){
+  return int_zero( 10 * datos * .067 ) / 10;
+}
