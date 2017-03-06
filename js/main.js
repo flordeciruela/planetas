@@ -11,7 +11,7 @@ function resultado(datos){
            "Tu peso en Saturno es: "+pesoSaturno(datos)+"\n"+
            "Tu peso en Urano es : "+pesoUrano(datos)+"\n"+
            "Tu peso en Neptuno es : "+pesoNeptuno(datos)+"\n"+
-           "Tu peso en Pluton es : "+pesoPluton(datos);
+           "Tu peso en Pluton es : "+pesoPluton(datos)
          );
   }
   else{
